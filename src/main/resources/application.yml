@@ -1,0 +1,14 @@
+server:
+  port: 80
+
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/securitytest?useUnicode=true&characterEncoding=UTF-8&useSSL=false&allowMultiQueries=true
+    username: root
+    password: ThreatbookTim!
+
+mybatis:
+  configLocation: classpath:mybatis-config.xml
+  mapperLocations: classpath:mapper/*.xml
+  typeAliasesPackage: com.zyloong.springsecurity.demo.entity
